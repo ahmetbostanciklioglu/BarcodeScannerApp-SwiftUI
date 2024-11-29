@@ -1,7 +1,10 @@
 import UIKit
 import AVFoundation
 
-
+enum CameraError {
+    case invalidDeviceInput
+    case invalidScannedValue
+}
 
 protocol ScannerVCDelegate: class {
     func didFind(barcode: String)
